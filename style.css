@@ -1,0 +1,171 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+  /* font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0; */
+
+
+:root{
+    --cor-font-principal: #fff;
+    --cor-font-secundaria: #c5f82a;
+    --cor-botao-principal: #333333;
+    --cor-fundo-modal: #1f1f1f;
+    --cor-fundo: #141414;
+    --fnt-tam: 14px;
+    --fnt: "Inter", sans-serif;
+}
+
+@media (min-width: 320px){
+
+    html{
+        font-size: var(--fnt-tam);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--cor-font-principal);
+        font-family: var(--fnt);
+    }
+
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    body{
+        background-color: var(--cor-fundo);
+
+    }
+
+    .container{
+        box-sizing: border-box;
+        text-align: center;
+        border-radius: 10px;
+        width: 280px;
+        height: 500px;
+        background-color: var(--cor-fundo-modal);
+    }
+
+    .cabecalho_imagem{
+        border-radius: 100%;
+        height: 80px;
+        margin: 20px 0;
+    }
+
+    .cabecalho_nome{
+        margin: 10px;
+        font-weight: 500;
+        font-size: 1.4rem;
+    }
+
+    .cabecalho_endereco{
+        color: var(--cor-font-secundaria);
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+
+    .link_subtitulo{
+        font-size: 0.86rem;
+        font-weight: 300;
+        margin: 22px;
+    }
+
+    .link_site_botao{
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        background-color: var(--cor-botao-principal);
+        color: var(--cor-font-principal);
+        font-size: 0.9rem;
+        font-weight: 700;
+        margin: 15px 20px;
+        padding: 11px;
+        border-radius: 6px;
+    }
+
+    .link_site_botao:hover{
+        background-color: var(--cor-font-secundaria);
+        color: var(--cor-fundo-modal);
+    }
+
+    .rodape_site{
+        display: flex;
+        justify-content: center;
+        font-size: 0.5rem;
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    html{
+        font-size: 19px;
+    }
+
+    .container{
+        width: 350px;
+        height: 600px;
+    }
+
+    .cabecalho_imagem{
+        height: 100px;
+        margin: 30px 0;
+    }
+
+    .rodape_site{
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 1440px) {
+    
+    html{
+        font-size: 24px;
+    }
+
+    .container{
+        width: 430px;
+        height: 700px;
+    }
+
+    .cabecalho_imagem{
+        height: 150px;
+        margin: 30px 0;
+    }
+}
+
+    @media (min-width: 2560px) {
+    
+        html{
+            font-size: 32px;
+        }
+    
+        .container{
+            width: 560px;
+            height: 900px;
+        }
+    
+        .cabecalho_imagem{
+            height: 180px;
+            margin: 30px 0;
+        }
+
+        .link_subtitulo{
+            margin: 32px;
+        }
+
+        .link_site_botao{
+            margin: 20px 20px;
+            padding: 15px;
+        }
+
+        .rodape_site{
+            display: block;
+            font-size: 0.7rem;
+            margin-top: 60px;
+        }
+}
